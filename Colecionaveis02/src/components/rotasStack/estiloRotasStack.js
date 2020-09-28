@@ -11,7 +11,7 @@ const estiloRotasStack = StyleSheet.create({
       backgroundColor: '#d0f4ea'
     },
     screenItem: {
-      backgroundColor: '#d1d1d1'  
+      backgroundColor: '#7573e8'  
     }
 });
 

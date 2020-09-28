@@ -3,14 +3,23 @@ import { StyleSheet } from 'react-native';
 const estiloLogin = StyleSheet.create({
    container: {   
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',     
    },
-   borda: {   
-      backgroundColor: '#081a31',  
-      width: '80%',
-      height: 230,
-      borderRadius: 10,
+   fundo: {     
+      width: '100%',
+      height: '100%',
+      justifyContent: 'center',
+   },
+   LogoContainer: {
+        alignItems: 'center',
+        marginBottom: 30,
+   },
+   logo: {
+        width: 90, 
+        height: 90,
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 20,
    },
    texto: {
       fontSize: 20,
@@ -19,15 +28,22 @@ const estiloLogin = StyleSheet.create({
       textAlign: "center",
       padding: 10
    },
-   campo: {
-      backgroundColor: '#dcedff',
-      fontSize: 18,
-      marginLeft: 40,
-      marginRight: 40,    
-      marginTop: 5,
+   campoContainer: {
+      flexDirection: 'row',
+      padding: 10,
+      paddingLeft: 50,
+      paddingRight: 50,
+      margin: 10,
       borderRadius: 5,
-      height: 40,
-      paddingLeft: 10
+      alignItems: 'center',      
+    },
+   campo: {
+      fontSize: 18,
+      marginLeft: 15,
+      paddingBottom: 10,
+      borderBottomWidth: 1,
+      borderColor: 'white',   
+      color: 'white',   
     },
    botaoContainer: {
       marginTop: 20,
@@ -42,10 +58,23 @@ const estiloLogin = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
    },
+   botaoLinearGradient: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      margin: 20,
+      marginLeft: 50,
+      marginRight: 50,
+      height: 50,
+      paddingLeft: 15,
+      paddingRight: 15,
+      borderRadius: 8
+   },   
       botaoTexto: {
       fontSize: 18,
       color: '#FFFFFF',
-      fontWeight: 'bold'
+      paddingLeft: 15,
+      backgroundColor: 'tranparent',
    },
 });
 
